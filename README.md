@@ -1,21 +1,24 @@
-🎭 Playwright BDD - Esqueleto de Automação
-Este é um projeto "Mínimo Viável (MVP)" de automação de testes E2E utilizando o ecossistema moderno do Playwright com suporte nativo a BDD (Gherkin). Ideal para quem está transitando para stacks de alta performance em QA.
+# 🎭 Playwright BDD - Esqueleto de Automação
 
-🚀 Tecnologias Utilizadas
-Playwright: Engine de automação robusta e veloz.
+Este é um projeto **"Mínimo Viável (MVP)"** de automação de testes E2E utilizando o ecossistema moderno do Playwright com suporte nativo a BDD (Gherkin). Ideal para quem está transitando para stacks de alta performance em QA.
 
-TypeScript: Tipagem forte para evitar erros bobos no código.
+---
 
-Playwright-BDD: Integração perfeita entre Gherkin e Playwright.
+## 🚀 Tecnologias Utilizadas
 
-Page Object Model (POM): Padronização de arquitetura para fácil manutenção.
+* **Playwright:** Engine de automação robusta e veloz.
+* **TypeScript:** Tipagem forte para evitar erros no código.
+* **Playwright-BDD:** Integração perfeita entre Gherkin e Playwright.
+* **Page Object Model (POM):** Padronização de arquitetura para fácil manutenção.
 
-🛠️ Como Instalar e Configurar
-Clone o repositório:
+---
 
-Bash
-git clone https://github.com/seu-usuario/nome-do-repo.git
-cd nome-do-repo
+## 🛠️ Como Instalar e Configurar
+
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/seu-usuario/nome-do-repo.git](https://github.com/seu-usuario/nome-do-repo.git)
+   cd nome-do-repo
 Instale as dependências:
 
 Bash
