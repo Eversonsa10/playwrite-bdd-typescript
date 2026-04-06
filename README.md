@@ -19,32 +19,37 @@ Este é um projeto **"Mínimo Viável (MVP)"** de automação de testes E2E util
    ```bash
    git clone [https://github.com/seu-usuario/nome-do-repo.git](https://github.com/seu-usuario/nome-do-repo.git)
    cd nome-do-repo
-Instale as dependências:
 
-Bash
+**Instale as dependências:**
+
+```bash
 npm install
 Instale os browsers do Playwright:
 
-Bash
+```bash
 npx playwright install
+
 🏃 Como Rodar os Testes
 O projeto utiliza o playwright-bdd, que requer uma etapa de geração de arquivos antes da execução.
 
 Execução Completa (Recomendado)
+
 Para gerar os arquivos BDD e rodar os testes em uma única linha:
 
-Bash
+```bash
 npm test
 Execução com Interface Visual (UI Mode)
 Para debugar e ver o teste acontecendo passo a passo:
 
-Bash
+```bash
 npx bddgen && npx playwright test --ui
 Ver Relatório de Erros (Trace Viewer)
 Se um teste falhar, o relatório HTML será gerado automaticamente:
 
-Bash
+```bash
 npx playwright show-report
+
+
 📂 Estrutura do Projeto
 Plaintext
 ├── tests/
@@ -54,6 +59,7 @@ Plaintext
 │   └── fixtures/   # Configurações de Hooks e Injeção de Dependência
 ├── playwright.config.ts # Configuração central do Playwright
 └── package.json    # Scripts e dependências
+
 🔍 O que observar neste esqueleto?
 Trace Viewer: O projeto está configurado para gerar um trace completo de cada execução. Isso permite ver capturas de tela, rede e logs do console de cada ação.
 
