@@ -1,17 +1,29 @@
 import { test as base } from 'playwright-bdd';
-import { LoginPage } from '../pages/login.page';
 
-// Definimos quais páginas/objetos estarão disponíveis nos testes
-export const test = base.extend<{ loginPage: LoginPage }>({
+import { LoginPage } from '../pages/login.page';
+import { AddProdutoCarrinhoPage } 
+  from '../pages/addProdutoCarrinho.page';
+
+// 👇 aqui adicionamos as páginas
+export const test = base.extend<{
+  loginPage: LoginPage;
+  cartPage: AddProdutoCarrinhoPage;
+}>({
+
   loginPage: async ({ page }, use) => {
-    // --- Hook: Antes do Teste ---
+
     const loginPage = new LoginPage(page);
-    
-    // O 'use' entrega a instância para o step. 
-    // O teste roda enquanto está parado aqui.
     await use(loginPage);
 
-    // --- Hook: Depois do Teste (Cleanup) ---
-    console.log('Cenário finalizado, limpando vestígios...');
   },
+
+  cartPage: async ({ page }, use) => {
+
+    const cartPage =
+      new AddProdutoCarrinhoPage(page);
+
+    await use(cartPage);
+
+  },
+
 });

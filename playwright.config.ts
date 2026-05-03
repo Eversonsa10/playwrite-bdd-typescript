@@ -16,3 +16,7 @@ export default defineConfig({
     trace: 'on',
   },
 });
+
+use: {
+  storageState: 'storage/state.json'
+}

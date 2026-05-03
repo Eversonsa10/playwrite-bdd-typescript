@@ -12,3 +12,10 @@ When('eu insiro credenciais válidas', async ({ loginPage }) => {
 Then('devo ver a dashboard principal', async ({ loginPage }) => {
   await loginPage.verifyDashboard();
 });
+
+When('eu insiro as credenciais invalidas', async ({ loginPage }) => {
+  await loginPage.login('invalid_user', 'invalid_password');
+});
+Then('devo ver uma mensagem de erro', async ({ loginPage }) => {
+  await loginPage.verifyErrorMessage();
+}); 
